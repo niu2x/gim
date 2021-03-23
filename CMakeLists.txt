@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.13)
+
+project(LUA-COMPILER VERSION 1.0.0 LANGUAGES CXX C)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release CACHE STRING "build type" FORCE)
+endif()
+
+add_subdirectory(src)
+set_target_properties(lua_inject_code
+	PROPERTIES
+		RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}
+)
+
