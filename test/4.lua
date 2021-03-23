@@ -1,8 +1,8 @@
 --[=========[
- * AreaTaskRewardPopoutAction
+ * Daw AC
  * @date    2018-08-09 10:42:34
- * @authors zhou.ding
- * @email 	zhou.ding@happyelements.com
+ * @authors zx
+ * @email 	zx@icloud.com
 ]=========]
 
 
